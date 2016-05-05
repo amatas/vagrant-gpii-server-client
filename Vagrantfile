@@ -4,7 +4,7 @@
 Vagrant.configure(2) do |config|
 
   config.vm.provider :virtualbox do |vm|
-    vm.linked_clone = true
+#    vm.linked_clone = true
     vm.customize ["modifyvm", :id, "--memory", 2048 ]
     vm.customize ["modifyvm", :id, "--cpus", 2 ]
   end
@@ -32,8 +32,6 @@ SHELL
          ansible-playbook /vagrant/provisioning/playbook-fedora.yml
 SHELL
     m.vm.provider :virtualbox do |vm|
-      vm.customize ["modifyvm", :id, "--memory", 2048]
-      vm.customize ["modifyvm", :id, "--cpus", 2]
       vm.customize ["modifyvm", :id, "--vram", "128"]
       vm.customize ["modifyvm", :id, "--accelerate3d", "on"]
       vm.customize ["modifyvm", :id, "--audio", "null", "--audiocontroller", "ac97"]
