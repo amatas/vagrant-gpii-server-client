@@ -26,11 +26,14 @@ configuration of these services is stored in the
 The preferences server is listening on port `8082` and the couchdb is listening
 on port `5984`.
 
-The rest of the virtual machines doesn't boot by default. To spin up a Fedora VM
+The rest of the virtual machines don't boot by default. To spin up a Fedora VM
 run the command `vagrant up fedora`, this VM will have the IP address
 `192.168.50.11`. This VM has a clone of the GPII-Linux repository at
 `/home/vagrant/gpii/gpii-linux`, and a clone of GPII-universal at
 `/home/vagrant/gpii/node_modules/universal`.
+
+To spin up a VM Windows 10 VM run `vagrant up windows`. But this VMs is not
+provisioned automatically (task in progress).
 
 To access in to the VMs use the command `vagrant ssh server` or 
 `vagrant ssh fedora`.
