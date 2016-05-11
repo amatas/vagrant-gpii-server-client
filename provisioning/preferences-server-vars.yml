@@ -12,7 +12,6 @@ nodejs_app_install_dir: "/opt/gpii/node_modules/universal"
 nodejs_app_start_script: "gpii.js"
 nodejs_app_name: "universal"
 nodejs_app_host_address: "server"
-nodejs_app_tcp_port: 8081
 nodejs_app_git_repo: "https://github.com/GPII/universal.git"
 nodejs_app_git_branch: "master"
 nodejs_app_commands:

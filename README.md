@@ -23,6 +23,9 @@ preferences server and a couchdb running at the IP address `192.168.50.10`. The
 configuration of these services is stored in the
 [preferences-server-vars.yml](provisioning/preferences-server-vars.yml) file.
 
+The preferences server is listening on port `8082` and the couchdb is listening
+on port `5984`.
+
 The rest of the virtual machines doesn't boot by default. To spin up a Fedora VM
 run the command `vagrant up fedora`, this VM will have the IP address
 `192.168.50.11`. This VM has a clone of the GPII-Linux repository at
