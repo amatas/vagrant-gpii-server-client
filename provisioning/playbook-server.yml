@@ -25,15 +25,4 @@
     - preferences-server
     - preferences-server-data-loader
 
-- hosts: windows
-  pre_tasks:
-    - name: "Build hosts file"
-      win_lineinfile:
-        dest: 'c:\windows\system32\drivers\etc\hosts'
-        regexp: '.*{{ item[1] }}$'
-        line: "{{ item[1] }} {{ item[0] }}"
-        state: present
-      with_items: 
-        - [['server', '192.168.50.10'],
-           ['fedora', '192.168.50.11'],
-           ['windows', '192.168.50.12']] 
+
