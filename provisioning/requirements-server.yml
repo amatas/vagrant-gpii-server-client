@@ -13,3 +13,9 @@
 - src: http://github.com/gpii-ops/ansible-preferences-server-data-loader.git
   name: preferences-server-data-loader
 
+- src: https://github.com/idi-ops/ansible-nginx-reverse.git
+  name: nginx-reverse
+
+- src: https://github.com/idi-ops/ansible-nginx.git
+  name: nginx
+
