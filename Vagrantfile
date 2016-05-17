@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 SHELL
     m.vm.box = "inclusivedesign/centos7"
     m.vm.network :private_network, ip: "192.168.50.10"
-    m.vm.network "forwarded_port", guest: 8081, host: 8081
+    m.vm.network "forwarded_port", guest: 8082, host: 8082
     m.vm.provider :virtualbox do |vm|
       vm.customize ["modifyvm", :id, "--memory", 1024 ]
     end
